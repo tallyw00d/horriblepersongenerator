@@ -9,13 +9,13 @@ from keras.callbacks import ModelCheckpoint
 parser = ArgumentParser()
 parser.add_argument("-i", "--in", dest="input",
                     help="location of input dataset")
-# parser.add_argument("-o", "--out",dest="output",
-#                     help="location of model"
-#                     )
+parser.add_argument("-o", "--out",dest="output",
+                    help="location of model"
+                    )
 
 text = parser.parse_args().input
-# model_dir = parser.parse_args().output
-model_dir = os.path.abspath(os.environ.get('PS_MODEL_PATH'))
+model_dir = parser.parse_args().output
+# model_dir = os.path.abspath(os.environ.get('PS_MODEL_PATH'))
 
 unique_chars = ''.join(sorted(set(text)))
 
