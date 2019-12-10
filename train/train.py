@@ -9,7 +9,7 @@ from keras.callbacks import ModelCheckpoint
 parser = ArgumentParser()
 parser.add_argument("-i", "--in", dest="input",
                     help="location of input dataset")
-parser.add_argument("--modelPath", "--out",dest="output",
+parser.add_argument("-o", "--out",dest="output",
                     help="location of model"
                     )
 
