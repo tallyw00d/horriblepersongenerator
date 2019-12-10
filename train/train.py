@@ -1,4 +1,5 @@
 from argparse import ArgumentParser
+import os
 import numpy as np
 import pickle
 from keras.models import Sequential
@@ -13,7 +14,8 @@ parser.add_argument("-o", "--out",dest="output",
                     )
 
 text = parser.parse_args().input
-model_dir = parser.parse_args().output
+# model_dir = parser.parse_args().output
+model_dir = os.path.abspath(os.environ.get('PS_MODEL_PATH'))
 
 unique_chars = ''.join(sorted(set(text)))
 
