@@ -3,3 +3,6 @@ numpy
 os
 pickle
 keras
+keras.models
+keras.layers
+keras.callbacks
