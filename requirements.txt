@@ -1,6 +1,5 @@
 argparse
 numpy
-os
 pickle
 keras
 keras.models
