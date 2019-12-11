@@ -1,6 +1,5 @@
 argparse
 numpy
-pickle
 keras
 keras.models
 keras.layers
